@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://siape.veta.naver.com/fxshow?su=SU10599&calp=1&nrefreshx=1 -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>NAVER</title>
+    <script type="text/javascript" src="./jquery-1.8.0.min.js.다운로드"></script>
+    <script type="text/javascript" src="./pc.veta.core.min.js(1).다운로드"></script>
+    <link rel="stylesheet" type="text/css" href="./new_timeboard.min.css">
+</head>
+<body onload="lazyLoading()" marginwidth="0" marginheight="0">
+<div id="da_timeboard">
+    <div class="content">
+        <div id="addiv" class="ad">
+            <a href="https://siape.veta.naver.com/fxclick?eu=EU10041889&amp;calp=1&amp;oj=A4YjrwVVtw%2FnT%2FxbVY5BkiSu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&amp;ac=8444533&amp;src=5440980&amp;br=3661493&amp;evtcd=P901&amp;x_ti=1308&amp;tb=&amp;oid=&amp;sid1=&amp;sid2=&amp;rk=8ca6a10a932ad78db88316b6747bf397&amp;eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&amp;lu=&amp;brs=Y&amp;" id="ac_banner_a" target="_blank">
+            <img src="./045977cd8b4a9199b7f0_20211028203158598.jpg" width="1500" height="270" alt="[광고]G마켓 빅스마일데이 WD 외장하드 4TB 최대 30% OFF" border="0" style="width:750px;height:135px;"><div id="da_access" style="position: absolute; top: 50%; left: 50%; width: 154px; height: 58px; margin: -29px 0px 0px -77px; background: url(&quot;https://ssl.pstatic.net/tveta/libs/res/www/common/info/da_access.png&quot;); display: none;"></div></a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    try {
+        document.domain = "naver.com";
+    } catch (e) {}
+
+    function lazyLoading() {
+        new Nimp(["https://siape.veta.naver.com/fxview?eu=EU10041889&calp=1&oj=A4YjrwVVtw%2FnT%2FxbVY5BkiSu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444533&src=5440980&evtcd=P100&x_ti=1308&tb=&oid=&sid1=&sid2=&rk=8ca6a10a932ad78db88316b6747bf397&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V800"]).log(1);
+        initAd();
+    };
+    function initAd() {
+        setDomByGOLang();
+        initAltForImage();
+        setClickCoordinate();
+    };
+    function setDomByGOLang() {
+        var targetTag = $("#ac_banner_a");
+        var daHtml = "";
+
+        daHtml += "<img src=\"https://ssl.pstatic.net/tveta/libs/1358/1358303/045977cd8b4a9199b7f0_20211028203158598.jpg\" width=\"1500\" height=\"270\" alt=\"[광고]G마켓 빅스마일데이 WD 외장하드 4TB 최대 30% OFF\" border=\"0\" style=\"width:750px;height:135px;\">";
+
+        targetTag.append(daHtml);
+    };
+    function initAltForImage() {
+        // DA Alternative - Create Access Layer
+        var accessLayer = document.createElement('div');
+        accessLayer.setAttribute('id', 'da_access');
+        accessLayer.style.cssText = 'position:absolute;top:50%;left:50%;width:154px;height:58px;margin:-29px 0 0 -77px;background:url(https://ssl.pstatic.net/tveta/libs/res/www/common/info/da_access.png)';
+        accessLayer.style.display = "none";
+        var oAdDiv = document.getElementById("ac_banner_a");
+        oAdDiv.appendChild(accessLayer);
+
+        // DA Alternative - Focus Action
+        var altLink = document.getElementById("ac_banner_a");
+        var bMousedown = false;
+        altLink.onmousedown = function() {
+            bMousedown = true;
+        };
+        altLink.onfocus = function() {
+            if (!bMousedown) {
+                accessLayer.style.display = "block";
+            }
+        };
+        altLink.onblur = function() {
+              accessLayer.style.display = "none";
+        };
+    };
+    function setClickCoordinate(){
+        if (Da.$$("da_top") !== null) {
+            new naver_corp_da.getClickedCoordinate({
+                adArea: Da.$$("da_top")
+            }).activate();
+        }
+        new naver_corp_da.getClickedCoordinate({
+            adArea: Da.$("addiv"),
+            adType: "image",
+            parentArea: Da.$$("veta_top")
+        }).activate();
+    };
+</script>
+
+<div style="display: none;"></div></body></html>

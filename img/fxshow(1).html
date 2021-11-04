@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://siape.veta.naver.com/fxshow?su=SU10601&calp=1&nrefreshx=1 -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>NAVER</title>
+<link rel="stylesheet" type="text/css" href="./common.min.css">
+<style type="text/css">
+/* DA Alternative - Contents Style */
+#addiv{position:relative}
+#addiv embed,#addiv object{z-index:20}
+#addiv #da_alt{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1}
+#addiv #da_alt.on{z-index:30}
+#addiv #da_alt a{display:block;overflow:hidden;position:absolute;bottom:0;left:0;width:100%;height:100%}
+#addiv #da_alt .guide{visibility:hidden;position:absolute;top:50%;left:50%;width:154px;height:58px;margin:-29px 0 0 -77px;background:url(https://ssl.pstatic.net/tveta/libs/res/www/common/info/da_access.png)}
+#addiv #da_alt.on .guide{visibility:visible}
+</style>
+<script type="text/javascript" src="./jquery-1.8.0.min.js(1).다운로드"></script><script type="text/javascript" src="./CSSPlugin.min.js.다운로드"></script><script type="text/javascript" src="./EasePack.min.js.다운로드"></script><script type="text/javascript" src="./TweenLite.min.js.다운로드"></script><script type="text/javascript" src="./rollingboard_autoplay_newmain.min.js.다운로드"></script></head>
+<body onload="lazyLoading()" marginwidth="0" marginheight="0">
+<div id="addiv"></div>
+<script type="text/javascript" src="./pc.veta.core.min.js(2).다운로드"></script>
+<script>
+    document.domain = "naver.com";
+    var autoplay;
+
+    function lazyLoading() {
+        var sImageserver = "https://ssl.pstatic.net/tveta/libs";
+
+        loadScripts([
+            sImageserver + "/external/js/jquery-1.8.0.min.js?20170707",
+            sImageserver + "/external/js/CSSPlugin.min.js?20170707",
+            sImageserver + "/external/js/EasePack.min.js?20170707",
+            sImageserver + "/external/js/TweenLite.min.js?20170707",
+            sImageserver + "/assets/js/pc/main/min/rollingboard_autoplay_newmain.min.js?20201012"
+        ], function () {
+            // ACK IMP
+            new Nimp(["https://siape.veta.naver.com/fxview?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441924&evtcd=P100&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V800"]).log(1);
+            initAd();
+        });
+
+        function loadScripts(urlArr, callback) {
+            var loadingCount = 0;
+            var resourceCnt = urlArr.length;
+
+            for (var i in urlArr) {
+                naver_corp_da.loadScript(urlArr[i], function () {
+                    loadingCount++;
+                    if (loadingCount === resourceCnt) callback();
+                });
+            }
+        }
+    }
+
+    function initAd() {
+        var info;
+        info = this.getNewMainInfo();
+
+        info.adDiv = Da.$$("da_expwide");
+
+        autoplay = new RollingBoardAutoPlay(info);
+        autoplay.initAd();
+    }
+
+    function expandAd() {
+        autoplay.expandAd();
+    }
+
+    function hideAd() {
+        autoplay.hideAd();
+    }
+
+    function getNewMainInfo(){
+        return {
+            // 신메인
+            newver : true,
+            cssSrc: "https://ssl.pstatic.net/tveta/libs/assets/css/pc/main/min/rollingboard_autoplay_350.min.css?20191205",
+            expandCssSrc: "https://ssl.pstatic.net/tveta/libs/assets/css/pc/main/min/rollingboard_expand_videoplayer.min.css?20191205",
+            adContainerID: "da_brand",
+            adInfoImgSrc: "https://ssl.pstatic.net/tveta/libs/res/www/common/info/da_access.png", // 접근성 이미지
+            creativeData: {
+                basicVideoSrc: "https://tvetamovie.pstatic.net/libs/1364/1364306/3e54222f5aed411e530c_20211029113226603.mp4-pHIGH-v0-f146168-20211029113625088.mp4",
+                expansionVideoSrc: "https://tvetamovie.pstatic.net/libs/1364/1364306/8c1db9ce33ae0720033a_20211029113235960.mp4-pHIGH-v0-f146169-20211029113626004.mp4",
+                basicStillSrc: "https://ssl.pstatic.net/tveta/libs/1364/1364306/f8867570c1e156754693_20211029112220470.png",
+                expansionStillSrc: "https://ssl.pstatic.net/tveta/libs/1364/1364306/db2ec00a016d89562fe7_20211029112210868.png",
+                noSupportImgSrc: "https://ssl.pstatic.net/tveta/libs/1364/1364306/c1ccaf94fd63979d0854_20211029112158157.png",
+                balloonAdText1: "",
+                balloonAdText2: "",
+                altText: "[광고]2021. 11. 5(금) - 12. 5(일) 한국소리문화의 전당. 전북예술회관 등 14개 시, 군 세계서예전북비엔날레(WORLD~BUK-DO), 자연을 품다",
+                adWidth:350,
+                adHeight:200
+            },
+            logData: {
+                basicVideoClick: "https://siape.veta.naver.com/fxclick?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441924&br=3661959&evtcd=P901&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&lu=&brs=Y&",
+                iconOverImp: "https://siape.veta.naver.com/fxclick?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441924&br=3661960&evtcd=C1052&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&lu=&brs=Y&", // 확장 전 영상 마우스 오버/클릭
+                expansionImp: "https://siape.veta.naver.com/fxview?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441930&evtcd=C1001&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V810&t=i",
+                expansionClick: "https://siape.veta.naver.com/fxclick?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441930&br=3661965&evtcd=C1034&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&lu=&brs=Y&",
+                basicVideoTracking: {
+                    play: "https://siape.veta.naver.com/fxclick?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441924&br=3661961&evtcd=P216&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&lu=&brs=Y&",
+                    pause: "https://siape.veta.naver.com/fxclick?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441924&br=3661962&evtcd=P207&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&lu=&brs=Y&",
+                    soundOn: "https://siape.veta.naver.com/fxclick?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441924&br=3661963&evtcd=P206&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&lu=&brs=Y&",
+                    soundOff: "https://siape.veta.naver.com/fxclick?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441924&br=3661964&evtcd=P205&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&lu=&brs=Y&",
+                    secondProgressTracking: [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "https://siape.veta.naver.com/fxview?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441925&evtcd=DT_10&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V810&t=i"
+                    ],
+                    rateProgressTracking: [
+                        "https://siape.veta.naver.com/fxview?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441926&evtcd=P201&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V810&t=i",
+                        "https://siape.veta.naver.com/fxview?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441927&evtcd=P202&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V810&t=i",
+                        "https://siape.veta.naver.com/fxview?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441928&evtcd=P203&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V810&t=i",
+                        "https://siape.veta.naver.com/fxview?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441929&evtcd=P204&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V810&t=i"
+                    ]
+                },
+                expansionVideoTracking: {
+                    play: "https://siape.veta.naver.com/fxclick?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441930&br=3661966&evtcd=C1055&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&lu=&brs=Y&",
+                    pause: "https://siape.veta.naver.com/fxclick?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441930&br=3661967&evtcd=C1057&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&lu=&brs=Y&",
+                    soundOn: "https://siape.veta.naver.com/fxclick?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441930&br=3661968&evtcd=C1058&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&lu=&brs=Y&",
+                    soundOff: "https://siape.veta.naver.com/fxclick?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441930&br=3661969&evtcd=C1059&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&lu=&brs=Y&",
+                    progressTracking: [
+                        "https://siape.veta.naver.com/fxview?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441931&evtcd=C1066&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V810&t=i",
+                        "https://siape.veta.naver.com/fxview?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441932&evtcd=C1067&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V810&t=i",
+                        "https://siape.veta.naver.com/fxview?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441933&evtcd=C1068&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V810&t=i",
+                        "https://siape.veta.naver.com/fxview?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441934&evtcd=C1069&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V810&t=i"
+                    ]
+                },
+                noSupportImp: "https://siape.veta.naver.com/fxview?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441935&evtcd=C1000&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&brs=Y&&eid=V810&t=i", // 비지원 이미지 노출 수
+                noSupportClick: "https://siape.veta.naver.com/fxclick?eu=EU10041893&calp=1&oj=ZagUyei1lSiHJNI3IrOlSySu45nsufW92E5tIB9iVp%2FajQ2O0ZxG9Qb3nOqX%2FaUnoWglYSU5fFnEl9huOP%2FrQNyqesx0buJA&ac=8444784&src=5441935&br=3661970&evtcd=C1017&x_ti=1316&tb=&oid=&sid1=&sid2=&rk=a7184e81ddd6dda8d92ac5456426603c&eltts=j1vevpv5qQwHvUHZrPmsZQ%3D%3D&lu=&brs=Y&", // 비지원 이미지 클륵 수
+                fileviewcountapi1: "" != "" ? "" : ""
+            }
+        };
+    }
+</script>
+
+
+
+
+<div style="display: none;"></div></body></html>

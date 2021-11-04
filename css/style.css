@@ -14,6 +14,50 @@
     background-color: #F3F1FF;
 }
 
+.popup-wrap {
+    width: 1130px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pop-logo {
+    float: left;
+    width: 70px;
+    height: 49px;
+    background-color: #F3F1FF;
+    overflow: hidden;
+}
+
+.pop-img {
+    float: left;
+    width: 364px;
+    height: 44px;
+    background-color: #F3F1FF;
+}
+
+.pop-txt {
+    float: left;
+    width: 468px;
+    line-height: 23px;
+    background-color: antiquewhite;
+}
+
+.pop-btn {
+    float: left;
+    width: 78px;
+    height: 31px;
+    background-color: blueviolet;
+}
+
+.pop-close {
+    float: left;
+    width: 90px;
+    height: 13px; 
+    background-color: brown;
+    font-size: 11px;
+    overflow: hidden;
+}
+
 #header {
     margin: 0 auto;
     width: 1130px;
