@@ -8,6 +8,11 @@
     font-family: "맑은고딕";
 }
 
+a {
+    display: block;
+    text-decoration: none;
+}
+
 #popup {
     width: 100%;
     height: 49px;
@@ -22,40 +27,68 @@
 
 .pop-logo {
     float: left;
-    width: 70px;
+    width: 50px;
     height: 49px;
-    background-color: #F3F1FF;
+    /* background-color: #5d5399;  */
     overflow: hidden;
+    margin: 0 10px 0 0;
+    position: relative;
+}
+
+.pop-logo img {
+    position: absolute;
+    left: -838px;
+    top: -365px;
+    z-index: 2;
 }
 
 .pop-img {
     float: left;
     width: 364px;
     height: 44px;
-    background-color: #F3F1FF;
+    /* background-color: #75ca6d; */
+    margin: 5px 10px 0 0;
+}
+
+.pop-img img {
+    width: 364px;
+    height: 44px;
 }
 
 .pop-txt {
     float: left;
-    width: 468px;
-    line-height: 23px;
-    background-color: antiquewhite;
+    width: 480px;
+    line-height: 49px;
+    /* background-color: rgb(136, 87, 24); */
+    font-size: 18px;
+    margin: 0 10px 0 0;
 }
 
 .pop-btn {
     float: left;
     width: 78px;
     height: 31px;
-    background-color: blueviolet;
+    background-color: #7C56D5;
+    margin: 10px 10px 0 0;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+
+}
+
+.pop-btn a {
+    color: #F3F1FF;
+   line-height: 31px;
 }
 
 .pop-close {
     float: left;
-    width: 90px;
+    width: 100px;
     height: 13px; 
-    background-color: brown;
     font-size: 11px;
-    overflow: hidden;
+    margin: 25px 0 0 0;
+    background-color: brown;
+    text-align: left;
 }
 
 #header {
