@@ -6,6 +6,7 @@
     color: #222;
     font-size: 12px;
     font-family: "맑은고딕";
+    box-sizing: border-box;
 }
 
 a {
@@ -27,32 +28,27 @@ a {
 
 .pop-logo {
     float: left;
-    width: 50px;
+    width: 100px;
     height: 49px;
     /* background-color: #5d5399;  */
-    overflow: hidden;
-    margin: 0 10px 0 0;
-    position: relative;
+    margin: 0 5px 0 45px;
 }
 
 .pop-logo img {
-    position: absolute;
-    left: -838px;
-    top: -365px;
-    z-index: 2;
+    width: 100px;
+    margin-top: 15px;
 }
 
 .pop-img {
     float: left;
-    width: 364px;
+    width: 260px;
     height: 44px;
     /* background-color: #75ca6d; */
-    margin: 5px 10px 0 0;
+    margin: 5px 0 0 0;
 }
 
 .pop-img img {
-    width: 364px;
-    height: 44px;
+    width: 250px;
 }
 
 .pop-txt {
@@ -64,46 +60,73 @@ a {
     margin: 0 10px 0 0;
 }
 
+.pop-txt strong {
+    font-weight: 600;
+}
+
 .pop-btn {
     float: left;
     width: 78px;
     height: 31px;
     background-color: #7C56D5;
     margin: 10px 10px 0 0;
-    border-radius: 50%;
+    border-radius: 15px;
     border: none;
     overflow: hidden;
-
+    font-weight: 600;
 }
 
 .pop-btn a {
     color: #F3F1FF;
-   line-height: 31px;
+    line-height: 31px;
 }
 
 .pop-close {
     float: left;
     width: 100px;
     height: 13px; 
-    font-size: 11px;
-    margin: 25px 0 0 0;
-    background-color: brown;
+    margin: 20px 0 0 0;
     text-align: left;
 }
 
+.pclose-txt {
+    float: left;
+    font-size: 11px;
+    color: #777;
+}
+
+.pclose-img {
+    float: left;
+    width: 11px;
+    height: 11px;
+}
+.pclose-img img {
+    width: 11px;
+    height: 11px;
+    margin-bottom: 10px;
+}
 #header {
     margin: 0 auto;
     width: 1130px;
     height: 160px;
-    background-color: burlywood;
 }
 
 .side-nav {
     float: left;
     width: 1130px;
     height: 23px;
-    background-color: chocolate;
-    text-align: right;
+    margin-top: 10px;
+}
+
+.side-nav-wrap {
+    float: right;
+}
+
+.side-nav-wrap li {
+    float: left;
+    font-size: 11px;
+    line-height: 23px;
+
 }
 
 .ls-wrap {
@@ -111,6 +134,7 @@ a {
     width: 1130px;
     height: 56px;
     background-color: cornflowerblue;
+    margin-top: 20px;
 }
 
 .logo {
