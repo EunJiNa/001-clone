@@ -39,7 +39,38 @@
                 <a href="#"><img src="img/logo.png" alt="로고" width="222px"></a>
             </div>
             <div class="search">
-                검색
+                <div class="search_area" data-clk-prefix="sch">
+                    <form id="sform" name="sform" action="https://search.naver.com/search.naver" method="get" role="search">
+                    <fieldset>
+                    <legend class="blind">검색</legend>
+                    <select id="where" name="where" title="검색 범위 선택" class="blind">
+                    <option value="nexearch" selected="selected">통합검색</option><option value="post">블로그</option><option value="cafeblog">카페</option><option value="cafe">- 카페명</option><option value="article">- 카페글</option><option value="kin">지식iN</option><option value="news">뉴스</option><option value="web">사이트</option><option value="category">- 카테고리</option><option value="site">- 사이트</option><option value="movie">영화</option><option value="webkr">웹문서</option><option value="dic">사전</option><option value="100">- 백과사전</option><option value="endic">- 영어사전</option><option value="eedic">- 영영사전</option><option value="krdic">- 국어사전</option><option value="jpdic">- 일본어사전</option><option value="hanja">- 한자사전</option><option value="terms">- 용어사전</option><option value="book">책</option><option value="music">음악</option><option value="doc">전문자료</option><option value="shop">쇼핑</option><option value="local">지역</option><option value="video">동영상</option><option value="image">이미지</option><option value="mypc">내PC</option><optgroup label="스마트 파인더"><option value="movie">영화</option><option value="auto">자동차</option><option value="game">게임</option><option value="health">건강</option><option value="people">인물</option></optgroup><optgroup label="네이버 랩"><option>긍정부정검색</option></optgroup>
+                    </select>
+                    <input type="hidden" id="sm" name="sm" value="top_hty">
+                    <input type="hidden" id="fbm" name="fbm" value="0">
+                    <input type="hidden" id="acr" name="acr" value="" disabled="disabled">
+                    <input type="hidden" id="acq" name="acq" value="" disabled="disabled">
+                    <input type="hidden" id="qdt" name="qdt" value="" disabled="disabled">
+                    <input type="hidden" id="ie" name="ie" value="utf8">
+                    <input type="hidden" id="acir" name="acir" value="" disabled="disabled">
+                    <input type="hidden" id="os" name="os" value="" disabled="disabled">
+                    <input type="hidden" id="bid" name="bid" value="" disabled="disabled">
+                    <input type="hidden" id="pkid" name="pkid" value="" disabled="disabled">
+                    <input type="hidden" id="eid" name="eid" value="" disabled="disabled">
+                    <input type="hidden" id="mra" name="mra" value="" disabled="disabled">
+                    
+                    
+                    
+                    <div class="green_window">
+                    <!-- [AU] data-atcmp-element 에 해당하는 attribute를 추가해주세요. -->
+                    <input id="query" name="query" type="text" title="검색어 입력" maxlength="255" class="input_text" tabindex="1" accesskey="s" style="ime-mode:active;" autocomplete="off" placeholder="검색어를 입력해 주세요." onclick="document.getElementById('fbm').value=1;" value="" data-atcmp-element="">
+                    </div>
+                    <button id="search_btn" type="submit" title="검색" tabindex="3" class="btn_submit" onclick="window.nclick(this,'sch.action','','',event);">
+                    <span class="blind">검색</span>
+                    <span class="ico_search_submit"></span>
+                    </button>
+                    </fieldset>
+                    </form>
             </div>
         </div>
     </div>
@@ -180,7 +211,7 @@
                 <div class="news">
                     <div class="popup-news">
                         <div class="popup-news-list">
-                            <ul>
+                            <ul class="popup-news-slide">
                                 <li><a href="#"> 미디어오늘 <img src="" alt=">"> <span>신규확진자 최대치</span></a></li>
                                 <li><a href="#"> 미디어오늘 <img src="" alt=">"> <span>신규확진자 최대치</span></a></li>
                                 <li><a href="#"> 미디어오늘 <img src="" alt=">"> <span>신규확진자 최대치</span></a></li>
@@ -198,21 +229,171 @@
                         </div>
                     </div>
                     <div class="news-tit">
-                        뉴스타이틀
+                        <ul class="news-tit-list">
+                            <li class="n-list1"><a href="#"><img src="" alt="N"> 뉴스스탠드</a></li>
+                            <li class="n-list2"><a href="#">></a></li>
+                            <li class="n-list2"><a href="#">구독한 언론사</a></li>
+                            <li class="n-list3"><a href="#">ㆍ</a></li>
+                            <li class="n-list1"><a href="#">전체언론사</a></li>
+                        </ul>
+                        <ul class="news-tit-con">
+                            <li><a href="#"><img src="" alt="="></a></li>
+                            <li><a href="#"><img src="" alt="ㅁ"></a></li>
+                            <li><a href="#"><img src="" alt="ㅇ"></a></li>
+                        </ul>
                     </div>
                     <div class="news-list">
-                        뉴스리스트
+                        <ul class="news-list-wrap">
+                            <li><a href="#"><img src="img/002.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/003.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/047.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/005.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/006.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/052.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/008.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/009.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/011.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/013.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/014.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/015.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/016.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/018.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/020.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/021.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/022.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/028.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/029.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/030.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/031.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/032.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/038.png" alt="언론사" width="58" height="20"></a></li>
+                            <li><a href="#"><img src="img/044.png" alt="언론사" width="58" height="20"></a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="con">
                     <div class="con-tit">
-                        컨텐츠타이틀
+                        <ul class="con-tit-list1">
+                            <li class="c-tit1"><a href="#">오늘 읽을만한 글</a></li>
+                            <li class="c-tit2"><a href="#">주제별로 분류된 다양한 글 모음</a></li>
+                        </ul>
+                        <ul class="con-tit-list2">
+                            <li class="c-tit2"><a href="#"><strong>1,789</strong>개의 글</a></li>
+                            <li class="c-tit3"><a href="#"><img src="" alt="ㅇ" width="11" height="11">관심주제 설정</a></li>
+                        </ul>
                     </div>
                     <div class="con-list">
-                        컨텐츠리스트
+                        <div class="con-list-wrap">
+                            <ul>
+                                <li><a href="#">엔터</a></li>
+                                <li><a href="#">스포츠</a></li>
+                                <li><a href="#">자동차</a></li>
+                                <li><a href="#">웹툰</a></li>
+                                <li><a href="#">경제M</a></li>
+                                <li><a href="#">레시피</a></li>
+                                <li><a href="#">게임</a></li>
+                                <li><a href="#">영화</a></li>
+                            
+                            </ul>
+                            <ul>
+                                <li><a href="#">JOB&</a></li>
+                                <li><a href="#">테그</a></li>
+                                <li><a href="#">여행+</a></li>
+                                <li><a href="#">과학</a></li>
+                                <li><a href="#">리빙</a></li>
+                                <li><a href="#">건강</a></li>
+                                <li><a href="#">비즈니스</a></li>
+                                <li><a href="#">연애ㆍ결혼</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">책방</a></li>
+                                <li><a href="#">부모i</a></li>
+                                <li><a href="#">법률</a></li>
+                                <li><a href="#">패션뷰티</a></li>
+                                <li><a href="#">동물공감</a></li>
+                                <li><a href="#">디자인</a></li>
+                                <li><a href="#">중국</a></li>
+                                <li><a href="#">FARM</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">공연전시</a></li>
+                                <li><a href="#">함께N</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="con-txt">
-                        컨텐츠
+                    <div class="con-ten">
+                        <div class="con-ten-wrap">
+                            <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
+                            <div class="c-ten-txt">
+                                <h3 class="c-ten-t">책방</h3>
+                                <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                    단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
+                                </p>
+                                <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
+                            </div>
+                        </div>
+                        <div class="con-ten-wrap">
+                            <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
+                            <div class="c-ten-txt">
+                                <h3 class="c-ten-t">책방</h3>
+                                <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                    단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
+                                </p>
+                                <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
+                            </div>
+                        </div>
+                        <div class="con-ten-wrap">
+                            <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
+                            <div class="c-ten-txt">
+                                <h3 class="c-ten-t">책방</h3>
+                                <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                    단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
+                                </p>
+                                <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
+                            </div>
+                        </div>
+                        <div class="con-ten-wrap">
+                            <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
+                            <div class="c-ten-txt">
+                                <h3 class="c-ten-t">책방</h3>
+                                <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                    단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
+                                </p>
+                                <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
+                            </div>
+                        </div>
+                        <div class="con-ten-wrap">
+                            <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
+                            <div class="c-ten-txt">
+                                <h3 class="c-ten-t">책방</h3>
+                                <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                    단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
+                                </p>
+                                <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
+                            </div>
+                        </div>
+                        <div class="con-ten-wrap">
+                            <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
+                            <div class="c-ten-txt">
+                                <h3 class="c-ten-t">책방</h3>
+                                <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                    단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
+                                </p>
+                                <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
+                            </div>
+                        </div>
                     </div>
                     <div class="con-tit">
                         컨텐츠타이틀
@@ -221,8 +402,79 @@
                         컨텐츠 슬라이드
                     </div>
                     
-                    <div class="con-txt">
-                        컨텐츠
+                    <div class="con-ten">
+                        <div class="con-ten-wrap">
+                            <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
+                            <div class="c-ten-txt">
+                                <h3 class="c-ten-t">책방</h3>
+                                <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                    단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
+                                </p>
+                                <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
+                            </div>
+                        </div>
+                        <div class="con-ten-wrap">
+                            <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
+                            <div class="c-ten-txt">
+                                <h3 class="c-ten-t">책방</h3>
+                                <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                    단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
+                                </p>
+                                <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
+                            </div>
+                        </div>
+                        <div class="con-ten-wrap">
+                            <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
+                            <div class="c-ten-txt">
+                                <h3 class="c-ten-t">책방</h3>
+                                <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                    단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
+                                </p>
+                                <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
+                            </div>
+                        </div>
+                        <div class="con-ten-wrap">
+                            <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
+                            <div class="c-ten-txt">
+                                <h3 class="c-tne-t">책방</h3>
+                                <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                    단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
+                                </p>
+                                <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
+                            </div>
+                        </div>
+                        <div class="con-ten-wrap">
+                            <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
+                            <div class="c-ten-txt">
+                                <h3 class="c-ten-t">책방</h3>
+                                <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                    단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
+                                </p>
+                                <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
+                            </div>
+                        </div>
+                        <div class="con-ten-wrap">
+                            <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
+                            <div class="c-ten-txt">
+                                <h3 class="c-ten-t">책방</h3>
+                                <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                    단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
+                                </p>
+                                <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="new-txt">

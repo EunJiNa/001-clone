@@ -13,9 +13,9 @@ $(function(){
 
 $(function(){
     setInterval(function(){
-        $(".popup-news").animate({top:"-50"},1000,function(){
-            $(".popup-news-list li").eq(0).appendTo(".popup-news");
-            
-        })
-    })
-})
+       $(".popup-news-slide").animate({top:"-50"},1000,function(){
+           $(".popup-news-slide li").eq(0).appendTo(".popup-news-slide");
+           $(".popup-news-slide").css({top:0});
+       });
+    },3000);
+});

@@ -105,6 +105,9 @@ a {
     height: 11px;
     margin-bottom: 10px;
 }
+
+/* --------------------------------헤더영역------------------------------------ */
+
 #header {
     margin: 0 auto;
     width: 1130px;
@@ -134,7 +137,7 @@ a {
     width: 1130px;
     height: 56px;
     /* background-color: cornflowerblue; */
-    margin-top: 20px;
+    margin: 20px 0 50px;
 }
 
 .logo {
@@ -144,16 +147,48 @@ a {
     /* background-color: cornsilk; */
 }
 
+/* --------------------------------검색------------------------------------ */
+
 .search {
     float: left;
     width: 586px;
     height: 56px;
-    background-color: darkgray;
+    background-color: #fff;
+    margin-left: 20px;
+    border: 2px solid #19ce60;
+    border-right: 2px;
+    position: relative;
 }
 
-/* ---------------메뉴바------------------- */
+.btn_submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 56px;
+    height: auto;
+    background-color: #19ce60;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+}
+
+#query {
+    width: 530px;
+    line-height: 50px;
+    border: none;
+    text-indent: 20px;
+    margin: 1px;
+}
+
+
+
+/* --------------------------------메뉴바------------------------------------ */
 
 .main-nav {
+    clear: both;
     width: 100%;
     height: 50px;
     margin: 0 auto;
@@ -257,7 +292,7 @@ a {
 /* ---------------메인시작------------------- */
 
 #main-wrap {
-    margin: 0 auto;
+    margin: 0 auto; 
     width: 1130px;
 }
 
@@ -290,7 +325,6 @@ a {
     width: 100%;
     height: 50px;
     overflow: hidden;
-    position: relative;
 }
 
 .popup-news div {
@@ -298,16 +332,24 @@ a {
 }
 
 .popup-news-list {
-    text-align: left;
     font-size: 13px;
     padding-left: 20px;
+    position: relative;
+    height: 50px;
+}
+
+.popup-news-slide {
+    position: absolute;
     height: 200px;
     top: 0;
+    left: 0;
+    width: 480px;
+
 }
 
 .popup-news-list li {
-    position: absolute;
     font-weight: 700;
+    padding-left: 20px;
 }
 
 .popup-news-list span {
@@ -318,7 +360,7 @@ a {
 
 .news-con {
     font-size: 13px;
-    margin-left: 290px;
+    margin-left: 500px;
     font-weight: 700;
 }
 
@@ -337,37 +379,192 @@ a {
 
 .news-tit {
     clear: both;
+    width: 750px;
+    height: 50px;
+    font-size: 14px;
+}
+
+.news-tit-list li {
+    float: left;
+    padding-right: 6px;
+}
+
+.n-list1 {
+    font-weight: 600;
+    color: #000;
+}
+.n-list2 {
+    color: #555;
+}
+.n-list3 {
+    color: #ccc;
+}
+
+.news-tit-con li {
+    float: left;
+    padding: 0 9px;
+}
+
+.news-tit-con {
+    margin-left: 600px;
 }
 
 .news-list {
+    clear: both;
     width: 750px;
     height: 260px;
-    background-color: forestgreen;
+    margin-bottom: 35px;
+    border-top : 1px solid #E4E8EB;
 }
+
+.news-list-wrap li {
+    float: left;
+    width: 125px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    border-left: 1px solid #E4E8EB;
+    border-bottom: 1px solid #E4E8EB;
+} 
+
+.news-list-wrap li:nth-child(6n) {
+    border-right: 1px solid #E4E8EB;
+}
+
+
 
 .con {
     width: 750px;
+    clear: both;
 }
 
 .con-tit {
     line-height: 50px;
-    background-color: gold;
+    height: 50px;
+    width: 750px;
+    clear: both;
+    /* background-color: gold; */
 }
+
+.con-tit li {
+    float: left;
+}
+
+.con-tit-list1 li{
+    padding-right: 8px;
+}
+.con-tit-list2 {
+    margin-left: 570px;
+}
+
+.c-tit1 {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+}
+
+.c-tit2 {
+    font-size: 12px;
+    color: #888;
+}
+
+.c-tit2 strong {
+    font-weight: 700;
+    color: #000;
+}
+
+.c-tit3 {
+    font-size: 12px;
+    color: #555;
+}
+
+/* ---------------------------------글모음 리스트------------------------------------------ */
 
 .con-list {
+    clear: both;
     line-height: 50px;
-    background-color: greenyellow;
+    width: 750px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #E4E8EB;
+    margin-bottom: 22px;
 }
 
+.con-list-wrap {
+    width: 2250px;
+    height: 50px;
+    position: relative;
+    overflow-x: auto;
+}
+
+.con-list-wrap li {
+    width: 93.75px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #E4E8EB;
+}
+
+/* ---------------------------------글모음 리스트끝------------------------------------------ */
+
 .con-slide {
+    clear: both;
     width: 750px;
     height: 350px;
 }
 
-.con-txt {
+.con-ten {
+    clear: both;
     width: 750px;
     height: 774px;
     border-bottom: 1px solid #E4E8EB;
+}
+
+.con-ten-wrap {
+    width: 750px;
+    height: 114px;
+    margin-bottom: 18px;
+}
+
+.c-ten-img {
+    width: 170px;
+    float: left;
+}
+
+.c-ten-txt {
+    float: left;
+    width: 512px;
+    padding-left: 20px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+
+.c-ten-t {
+    font-size: 12px;
+    color: #42be6f;
+}
+.c-ten-t2 {
+    font-size: 13px;
+    color: #222;
+    font-weight: 600;
+}
+.c-ten-t3 {
+    font-size: 13px;
+    color: #444;
+    width: 512px;
+    max-height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 2px;
+
+}
+.c-ten-t4 {
+    font-size: 12px;
+    color: #555;
 }
 
 .right-main {
@@ -497,4 +694,9 @@ a {
 
 .blind {
     display: none;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
