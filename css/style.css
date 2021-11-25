@@ -3,7 +3,6 @@
 * {
     margin: 0 auto;
     padding: 0;
-    color: #222;
     font-size: 12px;
     font-family: "맑은고딕";
     box-sizing: border-box;
@@ -12,6 +11,7 @@
 a {
     display: block;
     text-decoration: none;
+    color: inherit;
 }
 
 #popup {
@@ -133,7 +133,7 @@ a {
     float: left;
     width: 1130px;
     height: 56px;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     margin-top: 20px;
 }
 
@@ -141,7 +141,7 @@ a {
     float: left;
     width: 222px;
     height: 56px;
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
 }
 
 .search {
@@ -151,13 +151,16 @@ a {
     background-color: darkgray;
 }
 
+/* ---------------메뉴바------------------- */
+
 .main-nav {
     width: 100%;
+    height: 50px;
     margin: 0 auto;
-    background-color: darkgrey;
     border-top: 1px solid #e4e8eb;
     border-bottom: 1px solid #E4E8EB;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .main-nav-wrap {
@@ -165,6 +168,93 @@ a {
     margin: 0 auto;
     line-height: 50px;
 }
+
+.main-nav-wrap li {
+    float: left;
+    padding-left: 10px;
+}
+
+.m-nav {
+    font-size: 15px;
+    font-weight: 700;
+    color:#03c75a;
+}
+
+.s-nav {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+}
+
+.thebogi-btn {
+   font-size: 13px; 
+   font-weight: normal;
+   color: #222;
+}
+
+.slideup-btn {
+    font-size: 13px; 
+    font-weight: normal;
+    color: #0ecd5a;
+    position: static;
+    z-index: 3;
+}
+
+.thebogi-wrap {
+    position: absolute;
+    width: 100%;
+    top: 51px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background-color: #fff;
+    line-height: 26px;
+    font-size: 13px;
+    height: 360px;
+    display: none;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 12%);
+    margin: 0 auto;
+}
+
+.thebogi-w {
+    margin: 0 auto;
+    width: 1130px;
+}
+
+.thebogi-wrap li{
+    float: left;
+    width: 161px; 
+    padding-left: 10px;
+    color: #000;
+    font-weight: 600;
+}
+
+.thebogi-list:last-child {
+    border-right: 1px solid #E4E8EB;
+}
+
+.thebogi-list {
+    padding: 10px 0 0 20px;
+    border-left: 1px solid #E4E8EB;
+    height: 280px;
+    margin-top: 10px;
+}
+
+.thebogi-list li{
+    width: 100px;
+    clear: both;
+    border: none;
+    padding: 0;
+    color: #222;
+    font-weight: normal;
+}
+
+.s-thebogi a{
+    padding-top: 3px;
+    color: #888;
+}
+
+/* ---------------메인시작------------------- */
 
 #main-wrap {
     margin: 0 auto;
@@ -186,19 +276,67 @@ a {
 .slide {
     width: 750px;
     height: 135px;
-    background-color: darkseagreen;
     margin-bottom: 10px;
 }
 
 .news {
     width: 750px;
     line-height: 50px;
-    background-color: rgb(218, 233, 218);
 }
 
 .popup-news {
     border: 1px solid #E4E8EB;
     background-color: #f7f9fa;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.popup-news div {
+    float: left;
+}
+
+.popup-news-list {
+    text-align: left;
+    font-size: 13px;
+    padding-left: 20px;
+    height: 200px;
+    top: 0;
+}
+
+.popup-news-list li {
+    position: absolute;
+    font-weight: 700;
+}
+
+.popup-news-list span {
+    font-weight: normal;
+    color: #222;
+}
+
+
+.news-con {
+    font-size: 13px;
+    margin-left: 290px;
+    font-weight: 700;
+}
+
+.news-con li {
+    float: left;
+    padding-right: 10px;
+}
+
+.naver-news {
+    color: #3565c9;
+}
+
+.jom {
+    color: #c8ccd1;
+}
+
+.news-tit {
+    clear: both;
 }
 
 .news-list {
@@ -355,4 +493,8 @@ a {
     width: 1130px;
     height: 42px;
     background-color: cadetblue;
+}
+
+.blind {
+    display: none;
 }
