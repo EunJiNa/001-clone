@@ -16,7 +16,8 @@
     <div id="popup">
         <div class="popup-wrap">
             <div class="pop-logo"><a href="#"><img src="img/pop-img1.png" alt="팝업로고"></a></div>
-            <div class="pop-img"><a href="#"><img src="img/img_darkmode@2x.png" alt="팝업이미지" width="364px" height="44px"></a></div>
+            <div class="pop-img"><a href="#"><img src="img/img_darkmode@2x.png" alt="팝업이미지" width="364px"
+                        height="44px"></a></div>
             <h2 class="pop-txt"><a href="#">여러분의 눈은 소중하니까, <strong>지금 바로 다크 모드를 켜세요!</strong></a></h2>
             <button class="pop-btn"><a href="#">다운로드</a></button>
             <div class="pop-close">
@@ -40,37 +41,80 @@
             </div>
             <div class="search">
                 <div class="search_area" data-clk-prefix="sch">
-                    <form id="sform" name="sform" action="https://search.naver.com/search.naver" method="get" role="search">
-                    <fieldset>
-                    <legend class="blind">검색</legend>
-                    <select id="where" name="where" title="검색 범위 선택" class="blind">
-                    <option value="nexearch" selected="selected">통합검색</option><option value="post">블로그</option><option value="cafeblog">카페</option><option value="cafe">- 카페명</option><option value="article">- 카페글</option><option value="kin">지식iN</option><option value="news">뉴스</option><option value="web">사이트</option><option value="category">- 카테고리</option><option value="site">- 사이트</option><option value="movie">영화</option><option value="webkr">웹문서</option><option value="dic">사전</option><option value="100">- 백과사전</option><option value="endic">- 영어사전</option><option value="eedic">- 영영사전</option><option value="krdic">- 국어사전</option><option value="jpdic">- 일본어사전</option><option value="hanja">- 한자사전</option><option value="terms">- 용어사전</option><option value="book">책</option><option value="music">음악</option><option value="doc">전문자료</option><option value="shop">쇼핑</option><option value="local">지역</option><option value="video">동영상</option><option value="image">이미지</option><option value="mypc">내PC</option><optgroup label="스마트 파인더"><option value="movie">영화</option><option value="auto">자동차</option><option value="game">게임</option><option value="health">건강</option><option value="people">인물</option></optgroup><optgroup label="네이버 랩"><option>긍정부정검색</option></optgroup>
-                    </select>
-                    <input type="hidden" id="sm" name="sm" value="top_hty">
-                    <input type="hidden" id="fbm" name="fbm" value="0">
-                    <input type="hidden" id="acr" name="acr" value="" disabled="disabled">
-                    <input type="hidden" id="acq" name="acq" value="" disabled="disabled">
-                    <input type="hidden" id="qdt" name="qdt" value="" disabled="disabled">
-                    <input type="hidden" id="ie" name="ie" value="utf8">
-                    <input type="hidden" id="acir" name="acir" value="" disabled="disabled">
-                    <input type="hidden" id="os" name="os" value="" disabled="disabled">
-                    <input type="hidden" id="bid" name="bid" value="" disabled="disabled">
-                    <input type="hidden" id="pkid" name="pkid" value="" disabled="disabled">
-                    <input type="hidden" id="eid" name="eid" value="" disabled="disabled">
-                    <input type="hidden" id="mra" name="mra" value="" disabled="disabled">
-                    
-                    
-                    
-                    <div class="green_window">
-                    <!-- [AU] data-atcmp-element 에 해당하는 attribute를 추가해주세요. -->
-                    <input id="query" name="query" type="text" title="검색어 입력" maxlength="255" class="input_text" tabindex="1" accesskey="s" style="ime-mode:active;" autocomplete="off" placeholder="검색어를 입력해 주세요." onclick="document.getElementById('fbm').value=1;" value="" data-atcmp-element="">
-                    </div>
-                    <button id="search_btn" type="submit" title="검색" tabindex="3" class="btn_submit" onclick="window.nclick(this,'sch.action','','',event);">
-                    <span class="blind">검색</span>
-                    <span class="ico_search_submit"></span>
-                    </button>
-                    </fieldset>
+                    <form id="sform" name="sform" action="https://search.naver.com/search.naver" method="get"
+                        role="search">
+                        <fieldset>
+                            <legend class="blind">검색</legend>
+                            <select id="where" name="where" title="검색 범위 선택" class="blind">
+                                <option value="nexearch" selected="selected">통합검색</option>
+                                <option value="post">블로그</option>
+                                <option value="cafeblog">카페</option>
+                                <option value="cafe">- 카페명</option>
+                                <option value="article">- 카페글</option>
+                                <option value="kin">지식iN</option>
+                                <option value="news">뉴스</option>
+                                <option value="web">사이트</option>
+                                <option value="category">- 카테고리</option>
+                                <option value="site">- 사이트</option>
+                                <option value="movie">영화</option>
+                                <option value="webkr">웹문서</option>
+                                <option value="dic">사전</option>
+                                <option value="100">- 백과사전</option>
+                                <option value="endic">- 영어사전</option>
+                                <option value="eedic">- 영영사전</option>
+                                <option value="krdic">- 국어사전</option>
+                                <option value="jpdic">- 일본어사전</option>
+                                <option value="hanja">- 한자사전</option>
+                                <option value="terms">- 용어사전</option>
+                                <option value="book">책</option>
+                                <option value="music">음악</option>
+                                <option value="doc">전문자료</option>
+                                <option value="shop">쇼핑</option>
+                                <option value="local">지역</option>
+                                <option value="video">동영상</option>
+                                <option value="image">이미지</option>
+                                <option value="mypc">내PC</option>
+                                <optgroup label="스마트 파인더">
+                                    <option value="movie">영화</option>
+                                    <option value="auto">자동차</option>
+                                    <option value="game">게임</option>
+                                    <option value="health">건강</option>
+                                    <option value="people">인물</option>
+                                </optgroup>
+                                <optgroup label="네이버 랩">
+                                    <option>긍정부정검색</option>
+                                </optgroup>
+                            </select>
+                            <input type="hidden" id="sm" name="sm" value="top_hty">
+                            <input type="hidden" id="fbm" name="fbm" value="0">
+                            <input type="hidden" id="acr" name="acr" value="" disabled="disabled">
+                            <input type="hidden" id="acq" name="acq" value="" disabled="disabled">
+                            <input type="hidden" id="qdt" name="qdt" value="" disabled="disabled">
+                            <input type="hidden" id="ie" name="ie" value="utf8">
+                            <input type="hidden" id="acir" name="acir" value="" disabled="disabled">
+                            <input type="hidden" id="os" name="os" value="" disabled="disabled">
+                            <input type="hidden" id="bid" name="bid" value="" disabled="disabled">
+                            <input type="hidden" id="pkid" name="pkid" value="" disabled="disabled">
+                            <input type="hidden" id="eid" name="eid" value="" disabled="disabled">
+                            <input type="hidden" id="mra" name="mra" value="" disabled="disabled">
+
+
+
+                            <div class="green_window">
+                                <!-- [AU] data-atcmp-element 에 해당하는 attribute를 추가해주세요. -->
+                                <input id="query" name="query" type="text" title="검색어 입력" maxlength="255"
+                                    class="input_text" tabindex="1" accesskey="s" style="ime-mode:active;"
+                                    autocomplete="off" placeholder="검색어를 입력해 주세요."
+                                    onclick="document.getElementById('fbm').value=1;" value="" data-atcmp-element="">
+                            </div>
+                            <button id="search_btn" type="submit" title="검색" tabindex="3" class="btn_submit"
+                                onclick="window.nclick(this,'sch.action','','',event);">
+                                <span class="blind">검색</span>
+                                <span class="ico_search_submit"></span>
+                            </button>
+                        </fieldset>
                     </form>
+                </div>
             </div>
         </div>
     </div>
@@ -100,10 +144,11 @@
                 <li class="thebogi-btn"><a href="#">더보기<img src="" alt="더보기"></a></li>
                 <li class="slideup-btn blind"><a href="#">접기<img src="" alt="접기"></a></li>
             </ul>
-            <div class="thebogi-wrap">
-                <div class="thebogi-w">
-                    <ul>
-                        <li class="thebogi-list"><a href="#">ㄱ-ㅁ
+        </div>
+        <div class="thebogi-wrap">
+            <div class="thebogi-w">
+                <ul>
+                    <li class="thebogi-list"><a href="#">ㄱ-ㅁ
                             <ul>
                                 <li><a href="#">날씨</a></li>
                                 <li><a href="#">네이버 MY CAR</a></li>
@@ -116,7 +161,7 @@
                                 <li><a href="#">메모</a></li>
                             </ul>
                         </a></li>
-                        <li class="thebogi-list"><a href="#">ㅂ-ㅅ
+                    <li class="thebogi-list"><a href="#">ㅂ-ㅅ
                             <ul>
                                 <li><a href="#">밴드</a></li>
                                 <li><a href="#">부동산</a></li>
@@ -129,7 +174,7 @@
                                 <li><a href="#"> </a></li>
                             </ul>
                         </a></li>
-                        <li class="thebogi-list"><a href="#">ㅇ
+                    <li class="thebogi-list"><a href="#">ㅇ
                             <ul>
                                 <li><a href="#">엑스퍼트</a></li>
                                 <li><a href="#">영화</a></li>
@@ -142,7 +187,7 @@
                                 <li><a href="#"> </a></li>
                             </ul>
                         </a></li>
-                        <li class="thebogi-list"><a href="#">ㅈ-ㅊ
+                    <li class="thebogi-list"><a href="#">ㅈ-ㅊ
                             <ul>
                                 <li><a href="#">자동차</a></li>
                                 <li><a href="#">주소록</a></li>
@@ -155,7 +200,7 @@
                                 <li><a href="#"> </a></li>
                             </ul>
                         </a></li>
-                        <li class="thebogi-list"><a href="#">ㅋ-ㅎ
+                    <li class="thebogi-list"><a href="#">ㅋ-ㅎ
                             <ul>
                                 <li><a href="#">캘린더</a></li>
                                 <li><a href="#">클로바더빙</a></li>
@@ -168,7 +213,7 @@
                                 <li><a href="#"> </a></li>
                             </ul>
                         </a></li>
-                        <li class="thebogi-list"><a href="#">A-Z
+                    <li class="thebogi-list"><a href="#">A-Z
                             <ul>
                                 <li><a href="#">Keep</a></li>
                                 <li><a href="#">modoo!</a></li>
@@ -181,7 +226,7 @@
                                 <li><a href="#"> </a></li>
                             </ul>
                         </a></li>
-                        <li class="thebogi-list"><a href="#">사전
+                    <li class="thebogi-list"><a href="#">사전
                             <ul>
                                 <li><a href="#">사전</a></li>
                                 <li><a href="#">국어사전</a></li>
@@ -194,8 +239,7 @@
                                 <li><a href="#"> </a></li>
                             </ul>
                         </a></li>
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
     </div>
@@ -207,7 +251,7 @@
                     <a href="#"><img src="img/slide.jpg" alt="슬라이드이미지" width="750px">
                     </a>
                 </div>
-    <!-- ------------------------------------------- 뉴스 ------------------------------------------------------- -->            
+    <!-- ------------------------------------------- 뉴스 ------------------------------------------------------- -->
                 <div class="news">
                     <div class="popup-news">
                         <div class="popup-news-list">
@@ -271,6 +315,7 @@
                         </ul>
                     </div>
                 </div>
+   <!-- ------------------------------------------- 컨텐츠 ------------------------------------------------------- -->                
                 <div class="con">
                     <div class="con-tit">
                         <ul class="con-tit-list1">
@@ -293,7 +338,7 @@
                                 <li><a href="#">레시피</a></li>
                                 <li><a href="#">게임</a></li>
                                 <li><a href="#">영화</a></li>
-                            
+
                             </ul>
                             <ul>
                                 <li><a href="#">JOB&</a></li>
@@ -327,8 +372,8 @@
                             <div class="c-ten-txt">
                                 <h3 class="c-ten-t">책방</h3>
                                 <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
-                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
-                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해
                                     단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
                                 </p>
                                 <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
@@ -339,8 +384,8 @@
                             <div class="c-ten-txt">
                                 <h3 class="c-ten-t">책방</h3>
                                 <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
-                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
-                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해
                                     단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
                                 </p>
                                 <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
@@ -351,8 +396,8 @@
                             <div class="c-ten-txt">
                                 <h3 class="c-ten-t">책방</h3>
                                 <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
-                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
-                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해
                                     단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
                                 </p>
                                 <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
@@ -363,8 +408,8 @@
                             <div class="c-ten-txt">
                                 <h3 class="c-ten-t">책방</h3>
                                 <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
-                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
-                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해
                                     단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
                                 </p>
                                 <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
@@ -375,8 +420,8 @@
                             <div class="c-ten-txt">
                                 <h3 class="c-ten-t">책방</h3>
                                 <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
-                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
-                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해
                                     단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
                                 </p>
                                 <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
@@ -387,29 +432,93 @@
                             <div class="c-ten-txt">
                                 <h3 class="c-ten-t">책방</h3>
                                 <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
-                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
-                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해
                                     단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
                                 </p>
                                 <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
                             </div>
                         </div>
                     </div>
+    <!-- ----------------------------------------베스트 셀러---------------------------------------- -->
                     <div class="con-tit">
-                        컨텐츠타이틀
+                        <ul class="con-tit-list1">
+                            <li class="c-tit1"><a href="#">베스트 셀러</a></li>
+                            <li class="c-tit2"><a href="#">집계기간 2021.11.15 ~ 2021.11.21</a></li>
+                        </ul>
+                        <ul class="con-tit-list2">
+                            <li class="c-tit2"><a href="#">제공 ㆍ </a></li>
+                            <li class="c-tit2"><a href="#">인터넷 교보문고</a></li>
+                        </ul>
                     </div>
                     <div class="con-slide">
-                        컨텐츠 슬라이드
+                        <ul>
+                            <li class="con-s-wrap"><a href="#">
+                            <div class="con-s-img">
+                                <img src="img/img8.jfif" alt="베스트셀러" width="120">
+                            </div>
+                            <div class="con-s-txt">
+                                <h3 class="c-ten-t2">1 거꾸로 읽는 세계사</h3>
+                                <p>저자 <strong class="c-ten-t4">유시민</strong></p>
+                                <p>출판 <strong class="c-ten-t4">돌베개</strong></p>
+                                <p>평점 <span>★ 10</span></p>
+                            </div>
+                        </a></li>
+                            <li class="con-s-wrap"><a href="#">
+                            <div class="con-s-img">
+                                <img src="img/img8.jfif" alt="베스트셀러" width="120">
+                            </div>
+                            <div class="con-s-txt">
+                                <h3 class="c-ten-t2">1 거꾸로 읽는 세계사</h3>
+                                <p>저자 <strong class="c-ten-t4">유시민</strong></p>
+                                <p>출판 <stron class="c-ten-t4"g>돌베개</stron></p>
+                                <p>평점 <span>★ 10</span></p>
+                            </div>
+                        </a></li>
+                            <li class="con-s-wrap"><a href="#">
+                            <div class="con-s-img">
+                                <img src="img/img8.jfif" alt="베스트셀러" width="120">
+                            </div>
+                            <div class="con-s-txt">
+                                <h3 class="c-ten-t2">1 거꾸로 읽는 세계사</h3>
+                                <p>저자 <strong class="c-ten-t4">유시민</strong></p>
+                                <p>출판 <strong class="c-ten-t4">돌베개</strong></p>
+                                <p>평점 <span>★ 10</span></p>
+                            </div>
+                        </a></li>
+                            <li class="con-s-wrap"><a href="#">
+                            <div class="con-s-img">
+                                <img src="img/img8.jfif" alt="베스트셀러" width="120">
+                            </div>
+                            <div class="con-s-txt">
+                                <h3 class="c-ten-t2">1 거꾸로 읽는 세계사</h3>
+                                <p>저자 <strong class="c-ten-t4">유시민</strong></p>
+                                <p>출판 <strong class="c-ten-t4">돌베개</strong></p>
+                                <p>평점 <span>★ 10</span></p>
+                            </div>
+                        </a></li>
+                            <li class="con-s-wrap"><a href="#">
+                            <div class="con-s-img">
+                                <img src="img/img8.jfif" alt="베스트셀러" width="120">
+                            </div>
+                            <div class="con-s-txt">
+                                <h3 class="c-ten-t2">1 거꾸로 읽는 세계사</h3>
+                                <p>저자 <strong class="c-ten-t4">유시민</strong></p>
+                                <p>출판 <strong class="c-ten-t4">돌베개</strong></p>
+                                <p>평점 <span>★ 10</span></p>
+                            </div>
+                        </a></li>
+                    </ul>
                     </div>
-                    
+
                     <div class="con-ten">
                         <div class="con-ten-wrap">
                             <div class="c-ten-img"><a href="#"><img src="img/img1.jfif" alt="이미지" width="170"></a></div>
                             <div class="c-ten-txt">
                                 <h3 class="c-ten-t">책방</h3>
                                 <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
-                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
-                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해
                                     단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
                                 </p>
                                 <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
@@ -420,8 +529,8 @@
                             <div class="c-ten-txt">
                                 <h3 class="c-ten-t">책방</h3>
                                 <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
-                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
-                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해
                                     단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
                                 </p>
                                 <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
@@ -432,8 +541,8 @@
                             <div class="c-ten-txt">
                                 <h3 class="c-ten-t">책방</h3>
                                 <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
-                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
-                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해
                                     단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
                                 </p>
                                 <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
@@ -444,8 +553,8 @@
                             <div class="c-ten-txt">
                                 <h3 class="c-tne-t">책방</h3>
                                 <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
-                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
-                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해
                                     단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
                                 </p>
                                 <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
@@ -456,8 +565,8 @@
                             <div class="c-ten-txt">
                                 <h3 class="c-ten-t">책방</h3>
                                 <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
-                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
-                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해
                                     단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
                                 </p>
                                 <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
@@ -468,8 +577,8 @@
                             <div class="c-ten-txt">
                                 <h3 class="c-ten-t">책방</h3>
                                 <h3 class="c-ten-t2">진정한 나를 찾다가 길을 잃고 헤매는 이유</h3>
-                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한 
-                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해 
+                                <p class="c-ten-t3">진정성이라는 거짓말 진정한 나를 찾다가 길을 잃고 헤매는 이유 좋은 물건을 개발하고, 판매하는 사람들은 진정성에 대한
+                                    언급을 빼놓지 않고 한다. 나 또한 진정성을 중요하게 여겨왔다. 정확히 진정성이 무엇인지는 모르겠지만.. 진정성에 대해
                                     단 한 번도 의심해 본 적이 없다. 그런데 최근 우연히 듣게 된 강의를 통해 진정성에 대한 의문이 생기게 되었고.. 강사
                                 </p>
                                 <p class="c-ten-t4">해피루나 ㆍ <span>1주일전</span></p>
@@ -478,9 +587,12 @@
                     </div>
                 </div>
                 <div class="new-txt">
-                    새로운글 더보기
+                    <a href="#"><img src="" alt="+" width="42" height="42"></a>
+                    <p>새로운 글 더보기</p>
                 </div>
             </div>
+
+    <!-- ----------------------------------------left main 끝------------------------------------------>
             <div class="right-main">
                 <div class="login">
                     로그인
@@ -507,7 +619,7 @@
                     <div class="arrow-center">
                         좌우
                     </div>
-                    
+
                     <div class="shopping-news">
                         <div class="shopping-news-tit">
                             쇼핑뉴스
@@ -517,7 +629,7 @@
                             쇼핑뉴스리스트
                         </div>
                     </div>
-                    
+
                     <div class="shopping-life">
                         <div class="shopping-news-tit">
                             쇼핑뉴스
@@ -528,19 +640,94 @@
             </div>
         </div>
     </div>
+
+    <!-- ----------------------------------------right main 끝---------------------------------------- -->
     <div id="footer">
         <div class="footer-wrap">
             <div class="baner">
-                배너
+                <ul>
+                    <li class="baner-wrap"><a href="#">
+                        <div class="baner-img">
+                       <img src="img/baro1.jpg" alt="배너이미지" width="160">
+                        </div>
+                        <div class="baner-txt">
+                            <p class="b-txt1">부스트캠프 AI Tech</p>
+                            <h3>네이버 커넥트재단AI교육</h3>
+                            <p>인공지능으로 세상을 바꿀 체인지메이커를 찾습니다</p>
+                        </div>
+                </a></li>
+                    <li class="baner-wrap"><a href="#">
+                        <div class="baner-img">
+                       <img src="img/baro1.jpg" alt="배너이미지" width="160">
+                        </div>
+                        <div class="baner-txt">
+                            <p class="b-txt1">부스트캠프 AI Tech</p>
+                            <h3>네이버 커넥트재단AI교육</h3>
+                            <p>인공지능으로 세상을 바꿀 체인지메이커를 찾습니다</p>
+                        </div>
+                </a></li>
+                    <li class="baner-wrap"><a href="#">
+                        <div class="baner-img">
+                       <img src="img/baro1.jpg" alt="배너이미지" width="160">
+                        </div>
+                        <div class="baner-txt">
+                            <p class="b-txt1">부스트캠프 AI Tech</p>
+                            <h3>네이버 커넥트재단AI교육</h3>
+                            <p>인공지능으로 세상을 바꿀 체인지메이커를 찾습니다</p>
+                        </div>
+                </a></li>
+                </ul>
             </div>
-            <div class="notice">공지사항</div>
+            <div class="notice">
+                <p>공지사항</p>
+                <p>서비스 전체보기<img src="" alt=">"></p>
+            </div>
             <div class="footer-con">
                 <div class="patner">
-                    네이버파트너
+                   <div class="patner-list">
+                       <h3>Crators</h3>
+                       <ul class="p-link">
+                           <li><a href="#">크리에이터</a></li>
+                           <li><a href="#">크리에이터</a></li>
+                        </ul>
+                   </div>
+                   <div class="patner-list">
+                       <h3>Crators</h3>
+                       <ul class="p-link">
+                           <li><a href="#">크리에이터</a></li>
+                           <li><a href="#">크리에이터</a></li>
+                           <li><a href="#">크리에이터</a></li>
+                           <li><a href="#">크리에이터</a></li>
+                           <li><a href="#">크리에이터</a></li>
+                        </ul>
+                   </div>
+                   <div class="patner-list">
+                       <h3>Crators</h3>
+                       <ul class="p-link">
+                           <li><a href="#">크리에이터</a></li>
+                           <li><a href="#">크리에이터</a></li>
+                           <li><a href="#">크리에이터</a></li>
+                           <li><a href="#">크리에이터</a></li>
+                           <li><a href="#">크리에이터</a></li>
+                           <li><a href="#">크리에이터</a></li>
+                        </ul>
+                   </div>
                 </div>
                 <div class="down">다운로드</div>
             </div>
-            <div class="copy">이용약관</div>
+            <div class="copy">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">제휴제안</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">네이버 정책</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li class="copy-p"><a href="#">ⓒ NAVER Corp.</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
