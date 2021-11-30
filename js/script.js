@@ -18,4 +18,10 @@ $(function(){
            $(".popup-news-slide").css({top:0});
        });
     },3000);
+    setInterval(function(){
+       $(".issue-list-wrap").animate({left:"-280"},500,function(){
+           $(".issue-list-wrap li").eq(0).appendTo(".issue-list-wrap");
+           $(".issue-list-wrap").css({left:0});
+       });
+    },3000);
 });

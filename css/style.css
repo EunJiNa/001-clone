@@ -634,6 +634,8 @@ button {
     color: #555;
 }
 
+/* --------------------right main------------------------ */
+
 .right-main {
     float: left;
     width: 350px;
@@ -646,44 +648,260 @@ button {
     background-color: #f7f9fa;
     border: 1px solid #dae1e6;
     margin-bottom: 10px;
+    padding: 16px;
+    clear: both;
 }
 
-.issue {
-    line-height: 50px;
-    background-color: rgb(185, 171, 190);
+.login p {
+    width: 315px;
+    height: 16px;
+    font-size: 12px;
+    color: #888;
+    padding-left: 3px;
     margin-bottom: 10px;
 }
 
+.login-box {
+    clear: both;
+    width: 315px;
+    height: 48px;
+    background-color: #19ce60;
+    border: 1px solid #15c654;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 48px;
+    margin-top: 11px;
+    font-weight: 700;
+    border-radius: 2px;
+}
+
+.log-list {
+    width: 303px;
+    height: 16px;
+    margin: 14px 8px 0 4px;
+}
+
+.log-list li {
+    float: left;
+    font-size: 12px;
+    padding-right: 3px;
+}
+
+.log-list li:last-child{
+    padding-right: 0;
+    float: right;
+}
+
+.log1 {
+    color: #444;
+}
+
+.log2 {
+    color: #555;
+}
+
+/* ------------------------------이슈----------------------------- */
+
+.issue {
+    line-height: 47px;
+    margin-bottom: 10px;
+    width: 350px;
+    border: 1px solid #dae1e6;
+    height: 47px;
+    position: relative;
+}
+
+.issue-list {
+    width: 280px;
+    height: 47px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.issue-list li, p {
+    float: left;
+}
+
+.issue-list-wrap {
+    position: absolute;
+    width: 840px;
+    height: 47px;
+    left: 0;
+}
+
+.issue-list li {
+    width: 280px;
+    height: 47px;
+    padding-left: 16px;
+    font-size: 13px;
+    color: #444;
+}
+
+.issue-list li p {
+    line-height: 18px;
+    margin-top: 13px;
+    padding-top: 1px;
+}
+
+.is-tit1 {
+    border: 1px solid #3291f8;
+    color: #3291f8;
+    font-size: 11px;
+    padding: 0 7px;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.is-tit2 {
+    border: 1px solid #222;
+    color: #222;
+    font-size: 11px;
+    padding: 0 7px;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.is-tit3 {
+    border-right: 1px solid #dae1e6;
+    padding: 0 7px 0 0;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 7px;
+}
+
+.stock-n {
+    font-weight: 700;
+}
+
+.stock-down {
+    color: #2586ee;
+}
+
+.arr-btn {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+
+}
+
+.arr-btn a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 1px solid #e4e8eb;
+
+}
+
+
 .video {
+    clear: both;
     width: 350px;
     height: 200px;
     background-color: grey;
+    margin-bottom: 15px;
 }
+
+
+/* ---------------------------쇼핑----------------------------- */
 
 .arrow-left {
     width: 332px;
     margin: 0 auto;
     line-height: 50px;
+
+}
+
+.shopping-tit {
+    width: 350px;
+    line-height: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+    height: 50px;
+}
+
+.s-tit-wrap {
+    padding-top: 14px;
+}
+
+.s-tit-wrap h3 {
+    float: left;
+    line-height: 19px;
+}
+
+.s-tit-wrap ul {
+    float: right;
+    
+}
+
+.s-tab-wrap li {
+    float: left;
+    margin-left: 14px;
+    line-height: 19px;
+    padding: 0 1px;
+}
+
+.active {
+    color: #03c75a;
+    border-bottom: 2px solid #19ce60;
 }
 
 .shopping {
     width: 350px;
     height: 1495px;
     border: 1px solid #dae1e6;
-}
-
-.shopping-tit {
-    width: 350px;
-    line-height: 50px;
+    clear: both;
 }
 
 .shopping-list {
+    clear: both;
     height: 70px;
     background-color: #f7f9fa; 
     border-bottom: 1px solid #dae1e6;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 14px 4px 11px 10px;
+}
+
+.s-list-wrap li {
+    display: block;
+    float: left;
+}
+
+.s-list-wrap {
+    clear: both;
+    width: 334px;
+    line-height: 20px;
+}
+
+.lc {
+    float: left;
+    border-radius: 50%;
+    width: 3px;
+    height: 3px;
+    background-color: #c9cccf;
+    margin: 6px 12px;
+}
+.lc2 {
+    float: left;
+    border-radius: 50%;
+    width: 3px;
+    height: 3px;
+    background-color: #c9cccf;
+    margin: 6px 5px;
+}
+
+.cc {
+    font-weight: 700;
 }
 
 .shopping-con {
+    clear: both;
     width: 332px;
     height: 772px;
     background-color: lavender;
